@@ -10,7 +10,15 @@ var schema = new Schema({
   isHappy: {type: Boolean, default: true},
   created: {type: Number, default: Date.now()},
   status: {type: String, enum: ['happy', 'happy', 'happy']},
-  toys: [{type: String}]
+  toys: [{type: String}],
+  
 })
 
 module.exports = mongoose.model(schemaName, schema)
+
+
+
+// var Person = Schema({
+//   name: {type: String},
+//   spouse: {type: ObjectId, ref: 'Person'}
+// })
